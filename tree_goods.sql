@@ -7,3 +7,4 @@ with RECURSIVE t as (
 			join goods_groups gp on gp.id = t.parent)
 
 select * from t;
+ 
