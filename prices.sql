@@ -145,12 +145,20 @@ values (22,3,6),(23,3,6);
 insert into ggroup_part(id_ggroup_part, id_goods_group)
 values (3,13);
 
---Запрос выдающий 2 цену одному партнеру на оддин товар
-with product  as (select pprl.id_goods, g.name, g.id_group, ggp.id_ggroup_part, pprl.price, pprl.ddate,pprl.id_prlist
+--Запрос, выдающий товар с различной ценой для партнера с номерами прайслистов
+with t as (SELECT  tab.name, tab.id_goods,tab.ddate,tab.id_partner, count(*) 
+           from (
+             select distinct  g.name, pprl.id_goods, pprl.ddate, pgg.id_partner, pprl.id_prlist from price_prlist pprl
+            join goods g on g.id = pprl.id_goods
+            join ggroup_part ggp on ggp.id_goods_group = g.id_group
+            join price_ggroup pgg on pprl.id_prlist = pgg.id_prlist and pgg.id_ggroup_part = ggp.id_ggroup_part) TAB
+        group BY tab.name, tab.id_goods,tab.ddate,tab.id_partner
+        having count(*)>1)
+select g.name, pprl.id_goods, pprl.ddate, pgg.id_partner, string_agg(pprl.id_prlist::text,',') 
 from price_prlist pprl
 join goods g on g.id = pprl.id_goods
-join ggroup_part ggp on ggp.id_goods_group = g.id_group)
-
-select distinct pr.name, pr.price from price_ggroup pgg
-join product pr on pr.id_prlist = pgg.id_prlist and pgg.id_ggroup_part = pr.id_ggroup_part
-where pgg.id_partner = 6;
+join ggroup_part ggp on ggp.id_goods_group = g.id_group
+join price_ggroup pgg on pprl.id_prlist = pgg.id_prlist and pgg.id_ggroup_part = ggp.id_ggroup_part
+where pprl.id_goods in(select id_goods from T) and pprl.ddate in (select ddate from T) and
+            pgg.id_partner in (select id_partner from T)
+group by g.name, pprl.id_goods, pprl.ddate, pgg.id_partner;
