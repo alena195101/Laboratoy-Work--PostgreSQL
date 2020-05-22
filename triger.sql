@@ -1,4 +1,4 @@
---тригер на update recgoods fifo
+--тригер на update incgoods fifo
 
 
 CREATE or REPLACE FUNCTION remains_refresh() RETURNS TRIGGER as $$ 
