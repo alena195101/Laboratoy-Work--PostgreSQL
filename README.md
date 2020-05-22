@@ -1,4 +1,4 @@
-# Laboratoy-Work--PostgreSQL
+# Laboratoy-Work-PostgreSQL
 Лабораторные работы по курсу "Системы обработки аналитической информации"
 
 [1) Цена  на дату](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/date-price.sql)
@@ -19,7 +19,7 @@
 
 Выбрать 10 случайных записей из запроса с продажами.
 
-[4) Контрольная] (https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/test.sql)
+[4) Контрольная](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/test.sql)
 
 Переписать запрос без слов GROUP BY используя стандартные возможности SQL
 
