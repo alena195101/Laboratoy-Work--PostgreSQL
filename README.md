@@ -1,8 +1,9 @@
 # Laboratoy-Work--PostgreSQL
 Лабораторные работы по курсу "Системы обработки аналитической информации"
+
 [1) Цена  на дату](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/date-price.sql)
 
-2) Прайсы: 
+[2) Прайсы: ](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/prices.sql)
 
 Давайте наполним базу псевдослучайными тестовыми данными
 
@@ -10,7 +11,7 @@
 
 Давайте напишем вывод прайсов конкретного партнера на заданную дату
 
-3) Запросы
+[3) Запросы](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/query.sql)
 
 Покупки: Город, Дата, Номер документа, Название группы товара, Название товара, Объем. Выборка за второй квартал 2020 года, Объемом более 10 м3
 
@@ -18,11 +19,11 @@
 
 Выбрать 10 случайных записей из запроса с продажами.
 
-4) Контрольная
+[4) Контрольная] (https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/test.sql)
 
 Переписать запрос без слов GROUP BY используя стандартные возможности SQL
 
-5) Вставка, изменение и удаление
+[5) Вставка, изменение и удаление](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/5_insert_update_delete.sql)
 
 Давайте создадим и заполним таблицу по поставкам в разрезе дней и складов: 
 
@@ -34,21 +35,21 @@
 
 Давайте удалим из таблицы товаров все товары по которым не было продаж и поставок
 
-6) Посчитать остатки на складах по всем дням периода с 1 марта 2020 года по 14 марта 2020 года
+[6) Посчитать остатки на складах по всем дням периода с 1 марта 2020 года по 14 марта 2020 года](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/remains_stor.sql)
 
-7) Прогноз продаж через хранимую процедуру
+[7) Прогноз продаж через хранимую процедуру](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/sales_forecast.sql)
 
 8) Триггер
 
-9) Контрольная на создание последовательности
+[9) Контрольная на создание последовательности](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/sequence.sql)
 
-10) Контрольная. Дерево товаров
+[10) Контрольная. Дерево товаров](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/tree_goods.sql)
 
-11) Дерево клиентов. Lateral последовательностей
+[11) Дерево клиентов. Lateral последовательностей](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/tree_client.sql)
 
-12) Оконные функции
+[12) Оконные функции](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/window_func.sql)
 
-13) Прогноз через Python
+[13) Прогноз через Python](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/mass_forecast.ipynb)
 
 14) Соревнование по мерам и измерениям (в классе)
 
