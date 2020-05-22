@@ -39,7 +39,7 @@
 
 [7) Прогноз продаж через хранимую процедуру](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/sales_forecast.sql)
 
-8) Триггер
+[8) Триггер](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/triger.sql)
 
 [9) Контрольная на создание последовательности](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/sequence.sql)
 
