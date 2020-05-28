@@ -55,4 +55,4 @@
 
 [15) Наполним транзакционную базу, заполним случайными данными, создадим хранилище, напишем ETL, пришлем мне 2 дампа и все скрипты.](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/tree/master/15dump)
 
-16) Создать MOLAP icCube и написать MDX
+[16) Создать MOLAP icCube и написать MDX](https://github.com/alena195101/Laboratoy-Work--PostgreSQL/blob/master/сube.pdf)
