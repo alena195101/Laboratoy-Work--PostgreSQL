@@ -144,3 +144,4 @@ where g.id=remains.goods and inc.storage=remains.storage;
 
 update remains set ssum =0
 where ssum is null;
+
